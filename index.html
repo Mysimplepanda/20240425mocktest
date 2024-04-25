@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>成績計算器</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>成績計算器</h1>
+<form id="scoreForm">
+  <div class="subject">國文: <input type="number" id="chinese" placeholder="(0-42)" min="0" max="42"/>/42</div>
+  <div class="subject">數學: 選擇 <input type="number" id="math_select" placeholder="(0-25)" min="0" max="25"/>/25 非選 <input type="number" id="math_nonselect" placeholder="(0-6)" min="0" max="6"/>/6</div>
+  <div class="subject">英文: 閱讀 <input type="number" id="english_reading" placeholder="(0-43)" min="0" max="43"/>/43 聽力 <input type="number" id="english_listening" placeholder="(0-21)" min="0" max="21"/>/21</div>
+  <div class="subject">社會: <input type="number" id="social" placeholder="(0-54)" min="0" max="54"/>/54</div>
+  <div class="subject">自然: <input type="number" id="science" placeholder="(0-50)" min="0" max="50"/>/50</div>
+  <button type="button" onclick="calculateGrades()">計算成績</button>
+</form>
+<div id="results"></div>
+<script src="script.js"></script>
+</body>
+</html>
